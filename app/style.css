@@ -1,0 +1,147 @@
+@font-face {
+    font-family: Aqua-Font;
+    src: url(aqua.ttf);
+}
+
+:root {
+
+    --bg-color: #0F1419;
+    --font-color: #C3C4C0;
+    --font-highlight: #F1B454;
+    --border-color: #1c2530;
+    --bold-background: #191F26;
+
+}
+
+html, body {
+
+    margin: 0;
+    height: 100%;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+
+    font-family: Aqua-Font;
+    font-size: 0.9em;
+
+}
+
+.page-title-container {
+
+    padding: 20px;
+    text-align: center;
+
+}
+
+.page-title {
+
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--font-color);
+
+}
+
+.page-subtitle {
+
+    font-style: italic;
+    font-size: 0.8em;
+
+}
+
+.navbar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.navlink {
+
+    text-decoration: none;
+    color: var(--font-color);
+
+}
+
+.navlink:hover {
+
+    color: var(--font-highlight);
+    border-bottom: solid var(--border-color) 2px;
+
+}
+
+.subsection {
+
+    border-top: solid var(--border-color) 2px;
+    border-left: solid var(--border-color) 9px;
+    border-right: solid var(--border-color) 2px;
+    border-bottom: solid var(--border-color) 2px;
+    margin: auto;
+    margin-top: 7.5vh;
+    width: min(80%,750px);
+
+}
+
+b {
+
+    color: var(--font-highlight);
+    font-weight: normal;
+    background-color: var(--bold-background);
+    padding: 0 2px;
+
+}
+
+.subsection .text-content {
+
+    margin: auto;
+    margin-bottom: 2vh;
+    line-height: 20px;
+    width: 92%;
+
+}
+
+.section-title {
+
+    margin-top: 3.5vh;
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+
+.img-container {
+
+    margin: auto;
+    margin-top: 7.5vh;
+    max-width: min(80%,750px);
+
+}
+
+img {
+
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+@media (min-width: 750px) {
+    
+    html {
+        font-size: 1.4em;
+    }
+
+    .page-title {
+        font-size: 2.2em;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+
+    .subsection .text-content {
+        line-height: 28px;
+    }
+
+}
