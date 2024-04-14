@@ -63,6 +63,8 @@ html, body {
 
     text-decoration: none;
     color: var(--font-color);
+    height: 1.2rem;
+    box-sizing: border-box;
 
 }
 
